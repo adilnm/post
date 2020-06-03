@@ -4,4 +4,10 @@ class PostsController < ApplicationController
 
         render json:posts
     end
+
+    def create
+        byebug
+        post=Post.new(params)
+    end
+
 end
